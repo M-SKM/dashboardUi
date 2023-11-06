@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RecentOrders } from '../model';
 
 @Component({
   selector: 'app-recent-order',
@@ -57,9 +58,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./recent-order.component.scss']
 })
 export class RecentOrderComponent {
-  @Input() recent_orders: any = '';
+  @Input() recent_orders: RecentOrders[] = [];
 
-  PopupData: any;
+  PopupData = {} as RecentOrders | undefined;
 
   title: string = "Recent Orders";
 

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { newUser } from '../model';
 
 @Component({
   selector: 'app-new-user',
@@ -7,7 +8,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `<div class="card-style">
   <div class="title-section">
-    <h6 class="sub-title">New User Registration</h6>
+    <h6 class="sub-title">{{title}}</h6>
   </div>
   <div class="card-content">
     <div class="card-info" *ngFor="let data of new_users;let i=index">
@@ -34,7 +35,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./new-user.component.scss']
 })
 export class NewUserComponent {
-  @Input() new_users: any = "";
+  @Input() new_users: newUser[] = [];
+  title: string = "New User Registration";
   getBarColor(value: any) {
     value = parseInt(value)
     if (value >= 85) {

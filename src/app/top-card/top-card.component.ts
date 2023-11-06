@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { topCard } from '../app.component';
+import { topCard } from '../model';
 
 
 @Component({
@@ -28,7 +28,7 @@ import { topCard } from '../app.component';
 export class TopCardComponent implements OnInit {
 
   Icons: string[] = ['fa-music', 'fa-chart-pie', 'fa-download', 'fa-rotate'];
-  @Input() card_data: any = '';
+  @Input() card_data: topCard[] = [];
   constructor() {
   }
   ngOnInit(): void {
