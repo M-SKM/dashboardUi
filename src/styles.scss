@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&family=Poppins:wght@400;500;600&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
-$var: #000;
 
 :root {
   --header-height: 4.5rem;
@@ -101,21 +100,7 @@ img {
 }
 
 
-.text_desc {
-  font-weight: var(--font-normal);
-  font-size: var(--normal-font-size);
-  line-height: 1.8rem;
-  letter-spacing: 0.01rem;
-}
 
-.title_section .text_desc {
-  font-size: var(--title-desc-size);
-}
-
-.title_desc {
-  font-size: var(--title-desc-size);
-  line-height: 2rem;
-}
 
 .title_text {
   font-size: var(--title-size);
