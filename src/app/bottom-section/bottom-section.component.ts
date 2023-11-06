@@ -274,7 +274,7 @@ export class BottomSectionComponent implements OnInit, AfterViewInit {
             boxWidth: 10,
             boxHeight: 10,
             usePointStyle: true,
-            padding: 20,
+            padding: 15,
             pointStyle: 'circle',
             font: {
               family: 'Poppins,sans-serif'
