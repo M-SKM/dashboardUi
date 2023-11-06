@@ -1,0 +1,44 @@
+.table {
+  padding: 25px;
+}
+
+.title-section h3 {
+  font-size: var(--h3-font-size);
+}
+
+div.table_scroll {
+  margin-top: .5rem;
+  max-height: 300px;
+  overflow-y: auto;
+
+  th,
+  td {
+    padding: 15px;
+    font-size: var(--smaller-font-size);
+    vertical-align: middle;
+
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+  }
+
+}
+
+.badge {
+  padding: 7px 10px !important;
+  border-radius: 3px !important;
+}
+
+.text-bg-paid {
+  background: rgb(10, 179, 27);
+}
+
+.text-bg-pending {
+  background: rgb(127, 127, 127);
+}
+
+.text-bg-failed {
+  background: rgb(214, 0, 0);
+}

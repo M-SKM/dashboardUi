@@ -1,0 +1,109 @@
+.card-content {
+  margin-top: .5rem;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding-right: 14px;
+
+  .card-info {
+    display: flex;
+    align-items: center;
+    padding: .8rem 0;
+    border-bottom: 1px solid #ececec;
+
+    .user-img {
+      position: relative;
+
+      .dot {
+        --sq: 11px;
+        bottom: -2px;
+        right: -2px;
+        border-radius: 50%;
+        position: absolute;
+        height: var(--sq);
+        width: var(--sq);
+        background: var(--first-color);
+        border: 2px solid var(--container-color);
+
+        &.active {
+          background: var(--green);
+        }
+      }
+
+      img {
+        --sq: 32px;
+        height: var(--sq);
+        width: var(--sq);
+        border-radius: 50%;
+      }
+    }
+
+    .user-info {
+      margin-left: 1.2rem;
+      min-width: 120px;
+      max-width: 115px;
+
+      h6 {
+        font-size: var(--smaller-font-size);
+        color: var(--title-color);
+        margin-bottom: 0;
+        font-weight: var(--font-semi-bold);
+      }
+
+      span {
+        font-size: 0.7rem;
+      }
+    }
+
+    .percentage {
+      margin-left: 1.2rem;
+      width: 90px;
+
+      .bar {
+        --progress-color: var(--colors);
+        height: 3px;
+        border-radius: 50px;
+        background: var(--progress-color);
+        position: relative;
+
+        span {
+          position: absolute;
+          right: -1.7rem;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 0.7rem;
+          font-weight: var(--font-semi-bold);
+          color: var(--progress-color);
+        }
+      }
+
+    }
+
+    .action-btn {
+      margin-left: auto;
+    }
+  }
+}
+
+
+
+// progressbar colors
+
+._85-progrees-color {
+  --colors: var(--first-color);
+}
+
+._45-progrees-color {
+  --colors: rgb(4, 170, 4);
+}
+
+._40-progrees-color {
+  --colors: rgb(45, 45, 45);
+}
+
+._30-progrees-color {
+  --colors: rgb(255, 221, 0);
+}
+
+._20-progrees-color {
+  --colors: rgb(255, 77, 0);
+}

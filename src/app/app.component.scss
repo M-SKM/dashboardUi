@@ -1,0 +1,26 @@
+#content {
+  position: relative;
+  width: calc(100% - 70px);
+  left: 70px;
+  transition: .3s ease;
+}
+
+.main {
+  padding: 50px;
+}
+
+.flex-2-col {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+
+  &>* {
+    &:nth-child(1) {
+      width: 65%;
+    }
+
+    &:nth-child(2) {
+      width: 35%;
+    }
+  }
+}

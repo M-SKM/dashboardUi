@@ -1,0 +1,55 @@
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+
+
+
+  .center-info {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+      font-size: var(--h1-font-size);
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: var(--small-font-size);
+    }
+  }
+}
+
+.card-style:nth-child(2) {
+  .chart-container {
+    height: 350px;
+  }
+}
+
+.flex-3-col {
+  .card-style {
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 36%;
+    }
+
+    &:nth-child(3) {
+      width: 24%;
+    }
+  }
+}
+
+.custome-select {
+  border: 0;
+  font-size: var(--smaller-font-size);
+  min-width: 80px;
+  color: var(--text-color);
+}
+
+.custome-select:focus {
+  outline: 0;
+}
